@@ -8,17 +8,21 @@ public:
             freq[val]++;
         }
 
-        int mini=INT_MAX;
+        // int mini=INT_MAX;
         for(int val:nums2){
             if(freq.find(val)!=freq.end()){
 
-            mini=min(mini,val);
-            }
+                return val;
+            // mini=min(mini,val);
+             }
         }
 
-        if(mini==INT_MAX){
-            return -1;
-        }
-        return mini;
+
+        // if(mini==INT_MAX){
+        //     return -1;
+        // }
+        // return mini;
+
+        return -1;
     }
 };
